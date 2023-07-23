@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+   
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins',sans-serif;
+    }
+    nav{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 8%;
+    }
+    nav .logo{
+        font-size: 32px;
+        font-weight: 600;
+        cursor:pointer;
+    }
+    nav ul li{
+        list-style: none;
+        display:inline-block;
+    }
+    nav ul li a{
+        display: block;
+        margin:0 10px;
+        color:black;
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 18px;
+        position:relative;
+    }
+    nav ul li a::before{
+        content:'';
+        position:absolute;
+        bottom:0;
+        left:0;
+        background-color:black;
+        width: 0%;
+        height: 2.5px;
+        transition:all 0.3s ease;
+    }
+    nav ul li a:hover::before{
+        width: 100%;
+    }
+    nav ul i{
+        font-size: 20px;
+        margin-left: 10px;
+        cursor:pointer;
+    }
+    .flex-box{
+        display:flex;
+        width:1000px;
+        margin:auto;
+        
+    }
+.left{
+        width:50%;
+    }
+    .big-img{
+     width:400px; 
+      margin:auto;
+    }
+    
+    .big-img img{
+        width:inherit;
+        justify-content: space-between;
+        width:50%;
+        margin-top: 15px;
+    }
+    .images{
+        display:flex;
+        justify-content: space-between;
+        width:50%;
+        margin-top:15px;
+        
+    }
+    .small-img{
+     width:50px;
+     
+     display: flex;  
+        overflow:hidden;
+       
+    }
+    .small-img img{
+        width:inherit;
+        cursor:pointer;
+        transition: all 0.3s ease;
+        padding:5px;
+        border: 1px solid black;
+    }
+    .small-img:hover img{
+        transform:scale(1.2);
+    }
+    .url{
+        font-size:16px;
+        font-weight:400;
+        color:brown;
+    }
+
+    .pname{
+        font-size: 22px;
+        font-weight: 600;
+        margin-top:50px;
+    }
+    .rating i{
+        color:rgb(255,123,0);
+    }
+    .price{
+        font-size:20px;
+        font-weight: 500;
+        margin:20px,0;
+        
+    }
+    .size{
+        display:flex;
+        align-items:center;
+        margin:20px;
+    }
+    .psize p{
+        font-size:18px;
+        font-weight: 500;
+    }
+    .psize{
+        width: 60px;
+        height:30px;
+        border:1px solid rgb(161, 130, 17);
+        color:black;
+        text-align: center;
+        margin:0 10px;
+        cursor:pointer;
+    }
+    .psize:hover{
+        background-color:rgb(99, 99, 128);
+    }
+    
+    .psize.active{
+        border-width: 1.5px;
+        color:brown;
+    }
+    .Quantity{
+        display:flex;
+    }
+    .Quantity p{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .Quantity input{
+        width:30px;
+        font-size: 17px;
+        font-weight: 500;
+        text-align: center;
+        margin-left:15px;
+    }
+    .btn-box{
+        display:flex;
+        margin:20px 0;
+        padding:5px;
+    }
+    .btn-box button{
+        font-size: 18px;
+        padding:8px 25px;
+        border:none;
+        outline:none;
+        border-radius:6px;
+        cursor:pointer;
+        color:white;
+    }
+    .cart-btn{
+        background-color:rgb(255,123,0);
+        margin-right:20px;
+    }
+    .buy-btn{
+        background-color: gray;
+    }
+    .cart-btn:hover{
+        background-color:rgb(162, 85, 13);
+    }
+    .buy-btn:hover{
+        background-color: rgb(128, 113, 113);
+    }
+
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><i class="fa-brands fa-shopify"></i></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            
+        </ul>
+    </nav>
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2TBL4XV1g4BC0F79PIcqGgXTFQzYPz8dWWU7AcXU_YFtcgS1G_nhPZY5SE3PSvo1n8Zs&usqp=CAU" >
+                
+                <div class="images">
+                    <div class="small-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMo9Kh4dRKclq85opEqWOjgCRi4pz-uxr17kR3R0IGn-XfEgDl5T0s6-HZvOgAdSw_nwY&usqp=CAU" onclick="showImg(this.src);">
+                    </div>
+                    <div class="small-img">
+                        <img src="https://img101.urbanic.com/goods-pic/adc9d2d4b21c41d2aa0439154c18f690_w1000_q90" onclick="showImg(this.src);">
+                    </div>
+                    <div class="small-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfMaOcn0LR5yKdLPkZ6dCSk-r2_HuRiMBe2gUiUNCOHWzuwxbysYwwN62-HSKLWgf2HSE&usqp=CAU"onclick="showImg(this.src);">
+                    </div>
+                    <div class="small-img">
+                        <img src="https://images.bewakoof.com/t1080/women-s-white-attempting-to-adult-graphic-printed-oversized-t-shirt-530393-1682403578-1.jpg" onclick="showImg(this.src);">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="url">Home>Product>T-shirt</div>
+            <div class="pname">T-shirt for women</div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$99</div>
+            <div class="size">
+                <p>Size:</p>
+                <div class="psize active">XS</div>
+                <div class="psize">S</div>
+                <div class="psize">M</div>
+                <div class="psize">L</div>
+                <div class="psize">XL</div>
+            </div>
+            <div class="Quantity">
+                <p>Quantity:</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <button class="cart-btn">Add to cart</button>
+                <button class="buy-btn">Buy now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let bigImg =document.querySelector('.big-img img');
+        function showImg(pic){
+            bigImg.src=pic;
+        }
+    </script>
+</body>
+</html>
